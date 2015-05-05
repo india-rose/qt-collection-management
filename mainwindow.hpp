@@ -5,6 +5,10 @@
 #include "menubar.hpp"
 
 class QPushButton;
+class QDockWidget;
+class QStatusBar;
+class QWidget;
+class QSize;
 
 class MainWindow : public QMainWindow
 {
@@ -13,14 +17,14 @@ class MainWindow : public QMainWindow
 public:
     MainWindow(QWidget *parent = 0);
     ~MainWindow();
-    QPushButton* button;
-    int cpt;
-
-public slots:
-    void react();
 
 private:
-    MenuBar* menu;
+    MenuBar* mMenu;
+    QStatusBar* mStatusBar;
+    QDockWidget* mLeftDock;
+    QDockWidget* mRight;
+    QDockWidget* mRightBottom;
+    QSize mScreenSize;
 };
 
 #endif // MAINWINDOW_HPP
