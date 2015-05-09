@@ -9,6 +9,7 @@ class QDockWidget;
 class QStatusBar;
 class QWidget;
 class QSize;
+class QToolBar;
 
 class MainWindow : public QMainWindow
 {
@@ -24,6 +25,7 @@ private:
     QDockWidget* mLeftDock;
     QDockWidget* mRight;
     QDockWidget* mRightBottom;
+    QToolBar* mToolBar;
     QSize mScreenSize;
 };
 
