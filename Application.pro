@@ -4,7 +4,7 @@
 #
 #-------------------------------------------------
 
-QT       += core gui widgets
+QT       += core gui widgets network
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -14,7 +14,11 @@ TEMPLATE = app
 
 SOURCES += main.cpp\
         mainwindow.cpp \
-    menubar.cpp
+        menubar.cpp \
+        user.cpp \
+        requests.cpp
 
 HEADERS  += mainwindow.hpp \
-    menubar.hpp
+            menubar.hpp \
+            user.hpp \
+            requests.hpp
